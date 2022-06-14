@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
     <title>Calculator</title>
 </head>
@@ -16,38 +19,38 @@
             <div class="calculator">
                 <p id="screen">0</p>
                 <hr />
+                <div class="fifth-line">
+                    <button class="first-fifth" onclick="openParenthesis()">(</button>
+                    <button class="second-fifth" onclick="closeParanthesis()">)</button>
+                    <button class="third-fifth" onclick="delet()">DEL</button>
+                    <button class="fourth-fifth" onclick="clear()">C</button>
+                </div>
                 <div class="first-line">
-                    <button onclick="add7()">7</button>
-                    <button onclick="add8()">8</button>
-                    <button onclick="add9()">9</button>
-                    <button onclick="add()">+</button>
+                    <button class="first-first" onclick="add7()">7</button>
+                    <button class="second-first" onclick="add8()">8</button>
+                    <button class="third-first" onclick="add9()">9</button>
+                    <button class="fourth-first" onclick="add()">+</button>
                 </div>
                 <br />
                 <div class="second-line">
-                    <button onclick="add4()">4</button>
-                    <button onclick="add5()">5</button>
-                    <button onclick="add6()">6</button>
-                    <button onclick="subtract()">-</button>
+                    <button class="first-second" onclick="add4()">4</button>
+                    <button class="second-second" onclick="add5()">5</button>
+                    <button class="third-second" onclick="add6()">6</button>
+                    <button class="fourth-second" onclick="subtract()">-</button>
                 </div>
                 <br />
                 <div class="third-line">
-                    <button onclick="add1()">1</button>
-                    <button onclick="add2()">2</button>
-                    <button onclick="add3()">3</button>
-                    <button onclick="divide()">/</button>
+                    <button class="first-third" onclick="add1()">1</button>
+                    <button class="second-third" onclick="add2()">2</button>
+                    <button class="third-third" onclick="add3()">3</button>
+                    <button class="fourth-third" onclick="divide()">/</button>
                 </div>
                 <br />
                 <div class="fourth-line">
-                    <button onclick="add0()">0</button>
-                    <button onclick="dot()">.</button>
-                    <button onclick="equal()">=</button>
-                    <button onclick="multiply()">*</button>
-                </div>
-                <div class="fifth-line">
-                    <button onclick="openParenthesis()">(</button>
-                    <button onclick="closeParanthesis()">)</button>
-                    <button onclick="clear()">C</button>
-                    <button onclick="save()">S</button>
+                    <button class="first-fourth" onclick="add0()">0</button>
+                    <button class="second-fourth" onclick="dot()">.</button>
+                    <button class="third-fourth" onclick="equal()">=</button>
+                    <button class="fourth-fourth" onclick="multiply()">*</button>
                 </div>
             </div>
         </div>
