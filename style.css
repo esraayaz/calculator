@@ -21,7 +21,7 @@
     max-width: 300px;
     max-height: auto;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 100px;
     text-align: center;
 }
 
@@ -41,178 +41,178 @@ button {
     box-shadow: 5px 5px 6px rgba(204, 255, 0, 0.9);
 }
 
-.first-fifth {
+.number {
+    margin-bottom: 15px;
+}
+
+.open {
     color: #ff6f3c;
 }
 
-.first-fifth:hover {
+.open:hover {
     background-color: #ff6f3c;
     color: black;
     border: none;
     box-shadow: 5px 5px 6px black;
 }
 
-.second-fifth {
+.close {
     color: #79c2d0;
 }
 
-.second-fifth:hover {
+.close:hover {
     background-color: #79c2d0;
     color: black;
     border: none;
     box-shadow: 5px 5px 6px black;
 }
 
-.third-fifth {
+.del {
     color: #cbf078;
 }
 
-.third-fifth:hover {
+.del:hover {
     background-color: #cbf078;
     color: black;
     border: none;
     box-shadow: 5px 5px 6px black;
 }
 
-.fourth-fifth {
+.clear {
     color: #e84a5f;
 }
 
-.fourth-fifth:hover {
+.clear:hover {
     background-color: #e84a5f;
     color: black;
     border: none;
     box-shadow: 5px 5px 6px black;
 }
 
-.first-first:hover {
+.seven:hover {
     background-color: #ffcece;
     color: black;
     border: none;
     box-shadow: 5px 5px 6px black;
 }
 
-.second-first:hover {
+.eight:hover {
     background-color: #cadefc;
     color: black;
     border: none;
     box-shadow: 5px 5px 6px black;
 }
 
-.third-first:hover {
+.nine:hover {
     background-color: #fcff82;
     color: black;
     border: none;
     box-shadow: 5px 5px 6px black;
 }
 
-.fourth-first {
+.plus {
     color: #afc5ff;
 }
 
-.fourth-first:hover {
+.plus:hover {
     background-color: #afc5ff;
     color: black;
     border: none;
     box-shadow: 5px 5px 6px black;
 }
 
-.first-second:hover {
+.four:hover {
     background-color: #fff2be;
     color: black;
     border: none;
     box-shadow: 5px 5px 6px black;
 }
 
-.second-second:hover {
+.five:hover {
     background-color: #36d1c4;
     color: black;
     border: none;
     box-shadow: 5px 5px 6px black;
 }
 
-.third-second:hover {
+.six:hover {
     background-color: #a0eecc;
     color: black;
     border: none;
     box-shadow: 5px 5px 6px black;
 }
 
-.fourth-second {
+.minus {
     color: #f6318c;
 }
 
-.fourth-second:hover {
+.minus:hover {
     background-color: #f6318c;
     color: black;
     border: none;
     box-shadow: 5px 5px 6px black;
 }
 
-.first-third:hover {
+.one:hover {
     background-color: #a3de83;
     color: black;
     border: none;
     box-shadow: 5px 5px 6px black;
 }
 
-.second-third:hover {
+.two:hover {
     background-color: #feffea;
     color: black;
     border: none;
     box-shadow: 5px 5px 6px black;
 }
 
-.third-third:hover {
+.three:hover {
     background-color: #00b7c2;
     color: black;
     border: none;
     box-shadow: 5px 5px 6px black;
 }
 
-.fourth-third {
+.divide {
     color: #4ef037;
 }
 
-.fourth-third:hover {
+.divide:hover {
     background-color: #4ef037;
     color: black;
     border: none;
     box-shadow: 5px 5px 6px black;
 }
 
-.first-fourth:hover {
+.zero:hover {
     background-color: #defcf9;
     color: black;
     border: none;
     box-shadow: 5px 5px 6px black;
 }
 
-.second-fourth:hover {
+.decimal:hover {
     background-color: #cadefc;
     color: black;
     border: none;
     box-shadow: 5px 5px 6px black;
 }
 
-.third-fourth:hover {
+.equal:hover {
     background-color: #c3bef0;
     color: black;
     border: none;
     box-shadow: 5px 5px 6px black;
 }
 
-.fourth-fourth {
+.times {
     color: #cca8e9;
 }
 
-.fourth-fourth:hover {
+.times:hover {
     background-color: #cca8e9;
     color: black;
     border: none;
     box-shadow: 5px 5px 6px black;
-}
-
-.fifth-line {
-    margin-bottom: 20px;
 }
