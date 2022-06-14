@@ -1,7 +1,15 @@
 *,
 *::before,
 *::after {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+#body {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( 90deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
 }
 
 .container {
@@ -10,15 +18,17 @@
 }
 
 .box {
-    max-width: 400px;
+    max-width: 300px;
     max-height: auto;
     margin: 0 auto;
     margin-top: 50px;
     text-align: center;
 }
 
-.screen {
-    float: right;
+#result {
+    margin-left: 250px;
+    color: white;
+    font-size: 20px;
 }
 
 button {
@@ -28,7 +38,7 @@ button {
     border: 0.5px solid black;
     background-color: black;
     color: white;
-    box-shadow: 5px 5px 6px #cf0;
+    box-shadow: 5px 5px 6px rgba(204, 255, 0, 0.9);
 }
 
 .first-fifth {

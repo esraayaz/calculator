@@ -13,44 +13,46 @@
     <title>Calculator</title>
 </head>
 
-<body>
+<body id="body">
     <div class="container">
         <div class="box">
             <div class="calculator">
-                <p id="screen">0</p>
+                <p id="result">0</p>
                 <hr />
-                <div class="fifth-line">
-                    <button class="first-fifth" onclick="openParenthesis()">(</button>
-                    <button class="second-fifth" onclick="closeParanthesis()">)</button>
-                    <button class="third-fifth" onclick="delet()">DEL</button>
-                    <button class="fourth-fifth" onclick="clear()">C</button>
-                </div>
-                <div class="first-line">
-                    <button class="first-first" onclick="add7()">7</button>
-                    <button class="second-first" onclick="add8()">8</button>
-                    <button class="third-first" onclick="add9()">9</button>
-                    <button class="fourth-first" onclick="add()">+</button>
-                </div>
-                <br />
-                <div class="second-line">
-                    <button class="first-second" onclick="add4()">4</button>
-                    <button class="second-second" onclick="add5()">5</button>
-                    <button class="third-second" onclick="add6()">6</button>
-                    <button class="fourth-second" onclick="subtract()">-</button>
-                </div>
-                <br />
-                <div class="third-line">
-                    <button class="first-third" onclick="add1()">1</button>
-                    <button class="second-third" onclick="add2()">2</button>
-                    <button class="third-third" onclick="add3()">3</button>
-                    <button class="fourth-third" onclick="divide()">/</button>
-                </div>
-                <br />
-                <div class="fourth-line">
-                    <button class="first-fourth" onclick="add0()">0</button>
-                    <button class="second-fourth" onclick="dot()">.</button>
-                    <button class="third-fourth" onclick="equal()">=</button>
-                    <button class="fourth-fourth" onclick="multiply()">*</button>
+                <div class="buttons">
+                    <div class="fifth-line">
+                        <button class="first-fifth" id="button">(</button>
+                        <button class="second-fifth" id="button">)</button>
+                        <button class="third-fifth" id="button">DEL</button>
+                        <button class="fourth-fifth" id="button">C</button>
+                    </div>
+                    <div class="first-line">
+                        <button class="first-first" id="button">7</button>
+                        <button class="second-first" id="button">8</button>
+                        <button class="third-first" id="button">9</button>
+                        <button class="fourth-first" id="button">+</button>
+                    </div>
+                    <br />
+                    <div class="second-line">
+                        <button class="first-second" id="button">4</button>
+                        <button class="second-second" id="button">5</button>
+                        <button class="third-second" id="button">6</button>
+                        <button class="fourth-second" id="button">-</button>
+                    </div>
+                    <br />
+                    <div class="third-line">
+                        <button class="first-third" id="button">1</button>
+                        <button class="second-third" id="button">2</button>
+                        <button class="third-third" id="button">3</button>
+                        <button class="fourth-third" id="button">/</button>
+                    </div>
+                    <br />
+                    <div class="fourth-line">
+                        <button class="first-fourth" id="button">0</button>
+                        <button class="second-fourth" id="button">.</button>
+                        <button class="third-fourth" id="equal">=</button>
+                        <button class="fourth-fourth" id="button">*</button>
+                    </div>
                 </div>
             </div>
         </div>
