@@ -25,7 +25,7 @@
     text-align: center;
 }
 
-#result {
+.calculator__display {
     margin-left: 250px;
     color: white;
     font-size: 20px;
@@ -38,15 +38,16 @@ button {
     border: 0.5px solid black;
     background-color: black;
     color: white;
-    box-shadow: 5px 5px 6px rgba(204, 255, 0, 0.9);
+    box-shadow: 5px 5px 6px rgb(0, 255, 4);
 }
 
-.number {
+[data-type="number"] {
     margin-bottom: 15px;
 }
 
 .open {
-    color: #ff6f3c;
+    color: #fe7c4d;
+    box-shadow: 5px 5px 6px #fe7c4d;
 }
 
 .open:hover {
@@ -58,6 +59,7 @@ button {
 
 .close {
     color: #79c2d0;
+    box-shadow: 5px 5px 6px #79c2d0;
 }
 
 .close:hover {
@@ -69,6 +71,7 @@ button {
 
 .del {
     color: #cbf078;
+    box-shadow: 5px 5px 6px #cbf078;
 }
 
 .del:hover {
@@ -79,7 +82,8 @@ button {
 }
 
 .clear {
-    color: #e84a5f;
+    color: #f9344e;
+    box-shadow: 5px 5px 6px #f9344e;
 }
 
 .clear:hover {
@@ -111,7 +115,8 @@ button {
 }
 
 .plus {
-    color: #afc5ff;
+    color: #396bf7;
+    box-shadow: 5px 5px 6px #396bf7;
 }
 
 .plus:hover {
@@ -144,6 +149,7 @@ button {
 
 .minus {
     color: #f6318c;
+    box-shadow: 5px 5px 6px #f6318c;
 }
 
 .minus:hover {
@@ -175,11 +181,12 @@ button {
 }
 
 .divide {
-    color: #4ef037;
+    color: #fffb00;
+    box-shadow: 5px 5px 6px #fffb00;
 }
 
 .divide:hover {
-    background-color: #4ef037;
+    background-color: #fffb00;
     color: black;
     border: none;
     box-shadow: 5px 5px 6px black;
@@ -208,6 +215,7 @@ button {
 
 .times {
     color: #cca8e9;
+    box-shadow: 5px 5px 6px #cca8e9;
 }
 
 .times:hover {
