@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  font-family: "Lato", sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+
+.calculator {
+  display: block;
+  padding: 30px;
+  background-color: #fe9dc8;
+  border: 3px solid #50300f;
+  border-radius: 10px;
+  box-shadow: 7px 7px #a13752;
+}
+
+form input {
+  border: 3px solid #50300f;
+  border-radius: 10px;
+  color: #50300f;
+  width: 80px;
+  height: 80px;
+  font-size: 34px;
+  font-weight: 500;
+  background-color: #ceefff;
+  margin: 2px;
+  cursor: pointer;
+  box-shadow: 1px 1px #a13752;
+}
+
+form input[type="button"]:hover {
+  background-color: #a2defd;
+  transition: all 0.3s ease;
+}
+
+.display {
+  display: flex;
+  justify-content: flex-end;
+  margin: 5px 0px 15px 0px;
+}
+
+.display input {
+  text-align: right;
+  flex: 1;
+  font-size: 32px;
+  padding: 5px 10px;
+  background-color: #a2defd;
+}
+
+form input.equal {
+  width: 164px;
+}
+
+.signature {
+  color: black;
+  padding-top: 30px;
+}
+
+#signature {
+  text-decoration: none;
+}
+
+#signature:hover {
+  color: palevioletred;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
