@@ -8,20 +8,29 @@
 
 body {
   background: linear-gradient(135deg, #fdfcfb 1%, #e2d1c3 100%);
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  margin: 0;
 }
 
 .container {
-  width: 50vh;
-  height: 100%;
+  width: 100%;
+  max-width: 50vh;
+  margin: 0 auto;
+  padding: 20px 0;
 }
 
 .calculator {
-  display: flexbox;
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   background-color: #fe9dc8;
   border: 3px solid #50300f;
   border-radius: 10px;
   box-shadow: 7px 7px #a13752;
+  margin: 0 auto;
+  width: 356px;
 }
 
 button {
