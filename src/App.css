@@ -14,7 +14,7 @@
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
-  background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  background: linear-gradient(135deg, #fdfcfb 1%, #e2d1c3 100%);
 }
 
 .calculator {
@@ -26,7 +26,7 @@
   box-shadow: 7px 7px #a13752;
 }
 
-form input {
+button {
   border: 3px solid #50300f;
   border-radius: 10px;
   color: #50300f;
@@ -40,7 +40,7 @@ form input {
   box-shadow: 1px 1px #a13752;
 }
 
-form input[type="button"]:hover {
+button:hover {
   background-color: #a2defd;
   transition: all 0.3s ease;
 }
@@ -60,7 +60,7 @@ form input[type="button"]:hover {
 }
 
 form input.equal {
-  width: 164px;
+  width: 248px;
 }
 
 .signature {
@@ -70,10 +70,11 @@ form input.equal {
 
 #signature {
   text-decoration: none;
+  color: #a13752;
 }
 
 #signature:hover {
-  color: palevioletred;
+  color: #0099e6;
   text-decoration: none;
   transition: all 0.3s ease;
 }
