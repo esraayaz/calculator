@@ -1,76 +1,175 @@
 import { useState } from "react";
-import "../App.css";
 
-function Numbers() {
-  const inputRef = useRef(null);
-  const resultRef = useRef(null);
+function App() {
+  const [number1, setNumber1] = useState("");
+  const [number2, setNumber2] = useState("");
+  const [currentOperation, setCurrentOperaton] = useState("");
   const [result, setResult] = useState(0);
 
-  function plus(e) {
-    e.preventDefault();
-    setResult((result) => result + Number(inputRef.current.value));
+  function allClear() {
+    setNumber1("");
+    setNumber2("");
+    setCurrentOperaton("");
+    setResult("");
+  }
+  function clickNumber(val) {
+    if (currentOperation === "") {
+      setNumber1(number1 + val);
+    } else {
+      setNumber2(number2 + val);
+    }
   }
 
-  function minus(e) {
-    e.preventDefault();
-    setResult((result) => result - Number(inputRef.current.value));
+  function clickOperation(val) {
+    setCurrentOperaton(val);
   }
 
-  function times(e) {
-    e.preventDefault();
-    setResult((result) => result * Number(inputRef.current.value));
+  function getResult() {
+    switch (currentOperation) {
+      case "+":
+        setResult(Number(number1) + Number(number2));
+        break;
+      case "-":
+        setResult(Number(number1) - Number(number2));
+        break;
+      case "×":
+        setResult(Number(number1) * Number(number2));
+        break;
+      case "÷":
+        setResult(Number(number1) / Number(number2));
+        break;
+    }
   }
-
-  function divide(e) {
-    e.preventDefault();
-    setResult((result) => result / Number(inputRef.current.value));
-  }
-
-  function resetInput(e) {
-    e.preventDefault();
-    inputRef.current(value.slice(0, -1));
-  }
-
-  function resetResult(e) {
-    e.preventDefault();
-    setResult((prevVal) => prevVal * 0);
-  }
-
   return (
-    <form action="">
-      <div className="display">
-        <input type="text" />
+    <div className="calculator">
+      <div className="output">
+        <div>{currentOperation ? number1 + currentOperation : ""}</div>
+        <div>{result ? result : !currentOperation ? number1 : number2}</div>
       </div>
       <div>
-        <button onClick={resetInput}>AC</button>
-        <button onClick={resetInput}>DE</button>
-        <button>.</button>
-        <button onClick={divide}>÷</button>
+        <button onClick={allClear} className="span-two">
+          AC
+        </button>
+        <button onClick={() => {}}>DE</button>
+        <button
+          onClick={() => {
+            clickNumber(".");
+          }}
+        >
+          .
+        </button>
+        <button
+          onClick={() => {
+            clickOperation("÷");
+          }}
+        >
+          ÷
+        </button>
       </div>
       <div>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button onClick={times}>×</button>
+        <button
+          onClick={() => {
+            clickNumber(9);
+          }}
+        >
+          9
+        </button>
+        <button
+          onClick={() => {
+            clickNumber(8);
+          }}
+        >
+          8
+        </button>
+        <button
+          onClick={() => {
+            clickNumber(7);
+          }}
+        >
+          7
+        </button>
+        <button
+          onClick={() => {
+            clickOperation("×");
+          }}
+        >
+          ×
+        </button>
       </div>
       <div>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button onClick={plus}>+</button>
+        <button
+          onClick={() => {
+            clickNumber(6);
+          }}
+        >
+          6
+        </button>
+        <button
+          onClick={() => {
+            clickNumber(5);
+          }}
+        >
+          5
+        </button>
+        <button
+          onClick={() => {
+            clickNumber(4);
+          }}
+        >
+          4
+        </button>
+        <button
+          onClick={() => {
+            clickOperation("+");
+          }}
+        >
+          +
+        </button>
       </div>
       <div>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button onClick={minus}>−</button>
+        <button
+          onClick={() => {
+            clickNumber(1);
+          }}
+        >
+          1
+        </button>
+        <button
+          onClick={() => {
+            clickNumber(2);
+          }}
+        >
+          2
+        </button>
+        <button
+          onClick={() => {
+            clickNumber(3);
+          }}
+        >
+          3
+        </button>
+        <button
+          onClick={() => {
+            clickOperation("-");
+          }}
+        >
+          -
+        </button>
       </div>
       <div>
-        <button>0</button>
-        <button>=</button>
+        <button
+          onClick={() => {
+            clickNumber(0);
+          }}
+        >
+          0
+        </button>
+        <button onClick={getResult} className="equal">
+          =
+        </button>
       </div>
-    </form>
+    </div>
   );
 }
 
-export default Numbers;
+export default App;
