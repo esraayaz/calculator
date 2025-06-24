@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 * {
   margin: 0;
@@ -11,18 +11,22 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Lato", sans-serif;
+  font-family: "Inter", sans-serif;
   background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
 
 .screen {
-  height: 4rem;
-  margin-bottom: 4rem;
+  height: 5rem;
+  margin-bottom: 2.2rem;
   background-color: #ecfbff;
   border: 3px solid #50300f;
-  box-shadow: 4px 4px #a13752;
+  box-shadow: 3px 3px #a13752;
   border-radius: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   text-align: right;
+  color: #50300f;
 }
 
 .wrapper {
@@ -42,9 +46,9 @@ body {
 }
 
 .button {
-  background-color: #cdefff;
+  background-color: #f8edeb;
   border: 2px solid #50300f;
-  box-shadow: 3px 3px #488bae;
+  box-shadow: 2px 2px #a13752;
   border-radius: 10px;
   height: 3.5rem;
   padding: 10px;
@@ -58,25 +62,31 @@ body {
 }
 
 .button:hover {
-  border: 5px solid;
-  border-bottom-color: #e91e63;
-  border-left-color: #03a9f4;
-  border-right-color: #cddc39;
-  border-top-color: #ff9800;
-  background-color: white;
-  color: #5d4037;
+  border: 2px solid #f8f4f3;
+  transition: 0.4s ease;
+  background-color: #f8f4f3;
   box-shadow: none;
 }
 
 .equals {
-  background-color: #d7ec16;
+  background-color: #baf2bb;
   grid-column: 3/5;
 }
 
+.equals:hover {
+  transition: 0.4s ease;
+  background-color: #d5fad5;
+  border: 2px solid #d5fad5;
+}
+
 .operater {
-  background-color: #a13752;
-  color: #cdefff;
-  box-shadow: 3px 3px rgb(234, 234, 234);
+  background-color: #b5e2fa;
+}
+
+.operater:hover {
+  transition: 0.4s ease;
+  background-color: #d9effc;
+  border: 2px solid #d9effc;
 }
 
 .signature {
@@ -86,7 +96,7 @@ body {
 
 .signature a {
   text-decoration: none;
-  color: #50300f;
+  color: #95520f;
 }
 
 .signature a:hover {

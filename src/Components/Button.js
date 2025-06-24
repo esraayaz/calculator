@@ -5,7 +5,7 @@ const getStyleName = (btn) => {
   const className = {
     "=": "equals",
     "/": "operater",
-    "×": "operater",
+    "*": "operater",
     "-": "operater",
     "+": "operater",
   };
@@ -79,7 +79,7 @@ const Button = ({ value }) => {
         const result = {
           "+": (a, b) => a + b,
           "-": (a, b) => a - b,
-          x: (a, b) => a * b,
+          "*": (a, b) => a * b,
           "/": (a, b) => a / b,
         };
 
@@ -99,7 +99,7 @@ const Button = ({ value }) => {
       ".": commaClick,
       C: resetClick,
       "/": signClick,
-      x: signClick,
+      "*": signClick,
       "-": signClick,
       "+": signClick,
       "=": equalsClick,

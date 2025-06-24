@@ -7,8 +7,8 @@ import CalcProvider from "./context/CalcContex.js";
 import "./App.css";
 
 const btnValues = [
-  ["C", "+/-", "%", "/"],
-  [7, 8, 9, "x"],
+  ["C", "+-", "%", "/"],
+  [7, 8, 9, "*"],
   [4, 5, 6, "-"],
   [1, 2, 3, "+"],
   [0, ".", "="],
